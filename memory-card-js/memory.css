@@ -1,0 +1,138 @@
+body
+{
+	background-color: #1C7430;
+	color: rgba(255,255,255,.85);
+	font:  bold 16px / 22px 'Open Sans', sans-serif;
+	user-select: none;	
+}
+main,
+#modal
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;	
+}
+#field
+{
+	margin-bottom: 5vh;
+	display: grid;
+	grid-template-columns: repeat(6, 10vw);
+	grid-template-rows: repeat(3, 25vh);
+	grid-gap: 1.5vw;
+}
+header
+{
+	display: grid;
+	grid-template-columns: 20vw 4fr 10vw;
+	width: calc(60vw + 7.5vw);	
+	margin: 3vh 0;
+}
+.score
+{
+	text-align: right;
+}
+.restart
+{
+	cursor: pointer;
+}
+.wrapper
+{
+	box-sizing: border-box;
+	border-radius: 9px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+	perspective: 600px;
+	transform-style: preserve-3d;
+	transition: transform .5s ;
+	background: linear-gradient(45deg, #282828, #0a0a0a);
+}
+.card-rotation
+{
+	transform: rotateY(180deg);
+}
+.card-hidden
+{
+	display:none;
+	width: 10vw;
+	height: 25vh;
+	border-radius: 9px;
+	transform: scale(-1,1)
+}
+.matched
+{
+	animation: hide .5s forwards;
+	z-index: -1;
+}
+@keyframes hide
+{
+	to{
+		transform: rotateY(180deg) translateY(3vh);
+		opacity: 0;	
+	}
+}
+#startImg,
+#finalImg
+{
+	max-width: 1002px;
+	max-height: 514px;
+	width: 80vh;
+	height: 45vh;
+}
+@media screen and (max-width: 979px)
+{
+	#startImg
+	{
+		background: url(Design/StartGame.png) 50% 50% / 100% no-repeat #1C7430;
+	}
+	#finalImg
+	{
+		background: url(Design/Group2.png) 50% 50% / 100% no-repeat #1C7430;
+	}
+}
+@media screen and (min-width: 980px)
+{
+	#startImg
+	{
+		background: url(Design/StartGame@2x.png) 50% 50% / 100% no-repeat #1C7430;
+	}
+	#finalImg
+	{
+		background: url(Design/Group2@2x.png) 50% 50% / 100% no-repeat #1C7430;
+	}
+}
+.title
+{
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 38px;
+	letter-spacing: .2px;
+	margin: 20px auto 34px;
+}
+.congrat
+{
+	text-align: center;
+	font-size: 24px;
+	line-height: 35px;
+	letter-spacing:  0.15px;
+	margin: 9px auto 40px;
+}
+.btn_start
+{
+	font:  bold 16px / 22px 'Open Sans', sans-serif;
+	background-color: rgba(255,255,255,.85);
+	color: #1C7430;
+	height: 42px;
+	width: 144px;
+	border-radius: 4px;
+	border: none;	
+	cursor: pointer;
+}
+#modal
+{
+	display: none;
+	z-index: 1;
+	background-color: #1C7430;
+}
