@@ -85,7 +85,7 @@ header
 {
 	#startImg
 	{
-		background: url(Design/StartGame.png) 50% 50% / 100% no-repeat #1C7430;
+		background: url(startImages/StartGame.png) 50% 50% / 100% no-repeat #1C7430;
 	}
 	#finalImg
 	{
@@ -96,7 +96,7 @@ header
 {
 	#startImg
 	{
-		background: url(Design/StartGame@2x.png) 50% 50% / 100% no-repeat #1C7430;
+		background: url(startImages/StartGame@2x.png) 50% 50% / 100% no-repeat #1C7430;
 	}
 	#finalImg
 	{
