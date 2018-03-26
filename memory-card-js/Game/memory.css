@@ -89,18 +89,18 @@ header
 	}
 	#finalImg
 	{
-		background: url(Design/Group2.png) 50% 50% / 100% no-repeat #1C7430;
+		background: url(Design/Group.png) 50% 50% / 100% no-repeat #1C7430;
 	}
 }
 @media screen and (min-width: 980px)
 {
 	#startImg
 	{
-		background: url(Design/StartGame@2x.png) 50% 50% / 100% no-repeat #1C7430;
+		background: url(Design/StartGame2x.png) 50% 50% / 100% no-repeat #1C7430;
 	}
 	#finalImg
 	{
-		background: url(Design/Group2@2x.png) 50% 50% / 100% no-repeat #1C7430;
+		background: url(Design/Group2x.png) 50% 50% / 100% no-repeat #1C7430;
 	}
 }
 .title
