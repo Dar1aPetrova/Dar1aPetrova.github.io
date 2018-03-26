@@ -1,0 +1,212 @@
+body {
+    background-color: #222222;
+    color: white;
+    font-family: sans-serif;
+}
+#root,
+h1
+{
+	
+	margin: 0 auto;
+	padding: 25px;
+}
+h1,
+.filter-importance input:checked+label
+{
+	color: #6495ed;
+	text-align: center;
+}
+.app
+{
+	display: flex;
+	margin-top: 50px;
+}
+nav
+{
+	display:flex;
+	flex-direction: column;
+	width: 20vw;
+}
+.back-to-top
+{
+	visibility: hidden;
+	position: fixed;
+	bottom: 20px;
+	cursor: pointer;
+	align-self: center;
+}
+
+.back-to-top:hover
+{
+	transform: translateY(-20px) scale(1.2);
+	transition: all .8s ease-in-out;
+}
+
+.back-to-top img
+{
+	width: 30px;
+}
+
+.filter-importance
+{
+	align-self: flex-start;
+	align-items: flex-start;
+}
+.filter-importance label
+{
+	cursor: pointer;
+}
+.filter-importance legend
+{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.filter-importance input
+{
+	display: none;
+}
+
+.filter-importance fieldset
+{
+	border-radius: 5px;
+}
+
+.tasks-list
+{
+	width: 80vw;
+    text-align: center;
+}
+.title
+{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+li.high .title:before
+{
+	font-weight: normal;
+	content: "  ☆  ";
+}
+li.highest .title:before
+{
+	font-weight: normal;
+	content: "  ★  ";
+}
+.complete-task
+{
+	color: color: #bbb;
+	text-decoration: line-through;
+}
+.task
+{
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px auto;
+	text-align: left;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.failed-task
+{
+	color: red;
+}
+.hidden-task
+{
+	display: none;
+}
+.task:hover
+{
+	box-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+.description,
+.date
+{
+	text-align: left;
+	opacity: 0.85;
+	font-size: 0.9em;
+}
+.deadline
+{
+	font-size: 0.9em;
+}
+.newTask-form
+{
+	display: none;
+	min-width: 300px;
+	margin-left: 3em;
+	vertical-align: baseline;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.newTask-form.visible
+{
+	display: flex;
+}
+.newTask-form input,
+.newTask-form select
+{
+	box-sizing: border-box;
+  	min-height: 40px;
+	padding: 0 10px;
+ 	width: 300px;
+ 	height: 40px;
+ 	color: #606468;
+  	text-shadow: 1px 1px 1px black;
+  	background: rgba(0, 0, 0, 0.16);
+ 	border: 0;
+ 	border-radius: 5px;
+ 	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+.newTask-form label
+{
+	color: #bbb;
+}
+.newTask-form input:focus,
+.newTask-form select:focus
+{
+	color: white;
+  	background: rgba(0, 0, 0, 0.1);
+  	outline: 0;
+}
+.newTask-form button 
+{
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	background-color:#6495ed;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+	cursor:pointer;
+	
+}  
+.newTask-form button:active
+{
+	outline: 0;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+.remove
+{
+	float: right;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+.show-form-btn
+{
+	float: left;
+	margin: 0 2.5em;
+	width: 30px;
+	cursor: pointer;
+}
+.show-form-btn:hover,
+.show-form-btn-active
+{
+	transform: scale(1.2);
+	transition: transform .3s;
+}
+
+
+	
